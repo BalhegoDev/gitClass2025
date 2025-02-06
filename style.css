@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius:25px ;
+}
+.input{
+    position: relative;
+}
+.input i{
+    position: absolute;
+    color: #333;
+    right: 4px;
+    top:4px;
+    font-size: 20px;
+    
+}
+.input input {
+    width: 60vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}  
+
+.icones i{
+    font-size: 25px;
+    color: #fff;
+    margin: 0 10px;
+}
+.icones .bi:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff5733;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    color: #ff6f61;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    min-width: 150px;
+    width: 22%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonial {
+    background: #ffe0b2;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+aside {
+    background: #ffeb3b;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    background: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main, aside {
+        margin: 1rem 0;
+    }
+
+    .gallery-item {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
